@@ -17,5 +17,5 @@ jobs:
 
     - name: Build and Run Project
       run: |
-        dotnet build
-        dotnet run
+        dotnet build --project CsvParser
+        dotnet run --project CsvParser
