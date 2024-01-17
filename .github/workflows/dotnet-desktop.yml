@@ -2,7 +2,8 @@ name: Build and Run .NET Project
 
 on:
   repository_dispatch:
-
+    branches:
+      - "develop"
 jobs:
   build:
     runs-on: ubuntu-latest
