@@ -18,5 +18,5 @@ jobs:
     - name: Build and Run Project
       run: |
         dotnet restore
-        dotnet build --project CsvParser
+        dotnet build
         dotnet run --project CsvParser
