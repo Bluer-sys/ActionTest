@@ -1,7 +1,7 @@
 name: Build and Run .NET Project
 
 on:
-  workflow_dispatch:
+  repository_dispatch:
 
 jobs:
   build:
