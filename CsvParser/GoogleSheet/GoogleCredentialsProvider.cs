@@ -39,7 +39,9 @@ namespace CsvParser.GoogleSheet
         {
             ICredential credential;
             
-            using (var stream = new FileStream(SheetConstants.ServerKeyPath, FileMode.Open, FileAccess.Read))
+            
+            
+            using (var stream = new FileStream(SheetConstants.GetKeyPath(), FileMode.Open, FileAccess.Read))
             {
                 credential = await GoogleCredential.FromStreamAsync(stream, cancellationToken);
             }
