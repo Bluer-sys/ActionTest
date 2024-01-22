@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Copy external files
-      run: cp $GITHUB_WORKSPACE/CsvParser/Credentials/key.json /home/runner/work/ActionTest/ActionTest/CsvParser
+      run: cp $GITHUB_WORKSPACE/CsvParser/Credentials/key.json /home/runner
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
