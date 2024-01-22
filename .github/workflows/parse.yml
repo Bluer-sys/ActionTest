@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Copy external files
-      run: cp Credentials
+      run: cp CsvParser/Credentials/key.json
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
