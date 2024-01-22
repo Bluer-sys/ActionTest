@@ -8,10 +8,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Copy external files
-      run: cp $GITHUB_WORKSPACE/CsvParser/Credentials/key.json /home/runner
+      run: cp $GITHUB_WORKSPACE/CsvParser/Credentials/key.json CsvParser
+      
+    - name: Copy external files 2
+      run: cp $GITHUB_WORKSPACE/CsvParser/Credentials/key.json CsvParser/Credentials/key.json
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
