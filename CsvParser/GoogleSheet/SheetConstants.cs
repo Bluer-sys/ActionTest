@@ -11,7 +11,7 @@ public static class SheetConstants
 	public const string OutputFolder = "Data";
 	public const string TokenFolder = "token";
 	
-	public const string ServerKeyPath = "Credentials/key.json";
+	public const string ServerKeyPath = "Utilities/key.json";
 
 	public static string GetKeyPath()
 	{
